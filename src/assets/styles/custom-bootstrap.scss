@@ -1,0 +1,15 @@
+@import './custom-variables.scss';
+
+$prefix: 'mint-';
+
+.bg-light {
+  --#{$prefix}bg-color-light: #{$light};
+
+  background-color: var(--#{$prefix}bg-color-light);
+}
+
+.bg-primary {
+  --#{$prefix}bg-color-primary: #{$primary};
+
+  background-color: var(--#{$prefix}bg-color-primary);
+}

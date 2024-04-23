@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./assets/styles/custom-variables.scss";
+
+[data-layout-mode="light"] {
+  .btn-primary,
+  .btn-secondary {
+    --#{$prefix}color-light: #{$light};
+
+    color: var(--#{$prefix}color-light) !important;
+  }
+}

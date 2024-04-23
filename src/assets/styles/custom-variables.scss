@@ -1,0 +1,25 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+$primary: rgba(11, 170, 157, 1);
+$secondary: rgba(255, 153, 0, 1);
+$success: rgba(11, 170, 157, 1);
+$info: rgba(16, 116, 235, 1);
+$warning: rgba(255, 215, 113, 1);
+$danger: rgba(249, 0, 0, 1);
+$light: rgba(247, 247, 247, 1);
+$dark: rgba(56, 56, 56, 1);
+
+// Furthermore, it's necessary to override the $theme-colors
+$theme-colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'success': $success,
+  'info': $info,
+  'warning': $warning,
+  'danger': $danger,
+  'light': $light,
+  'dark': $dark,
+);
+
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';

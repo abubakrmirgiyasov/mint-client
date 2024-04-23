@@ -1,0 +1,111 @@
+@import '../../../../assets/styles/custom-bootstrap.scss';
+
+:host {
+  --#{$prefix}bg-color-light: #{$light};
+
+  display: block;
+  height: 50px;
+  background-color: var(--#{$prefix}bg-color-light);
+}
+
+.top-header,
+.second-header,
+.menu-ch {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.top-header {
+  height: 50px;
+}
+
+img {
+  pointer-events: none;
+}
+
+.color-light {
+  color: rgba(156, 156, 156, 1);
+}
+
+.circle-bg {
+  width: 20px;
+  height: 4px;
+
+  gap: 4px;
+  .dot {
+    border-radius: 100%;
+    width: 4px;
+    height: 4px;
+  }
+}
+
+.btn {
+  border: 0;
+  outline: none;
+}
+
+.second-header {
+  height: 80px;
+}
+
+.img-second-logo {
+  width: 750px;
+
+  .header-search {
+    position: relative;
+    max-width: 540px;
+    width: 100%;
+
+    .input-search {
+      width: 100%;
+      height: 40px;
+      border: 1px solid rgba(201, 201, 201, 1);
+      border-radius: 0.375rem;
+      padding: 1rem;
+      outline: none;
+    }
+
+    .btn-primary {
+      position: absolute;
+      height: 34px;
+      width: 100px;
+      right: 5px;
+      top: 2.5px;
+
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+  }
+}
+
+.link-addresses {
+  .btn-secondary {
+    width: 165px;
+    height: 40px;
+  }
+}
+
+.login-btn {
+  .user-svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.menu {
+  height: 55px;
+  background-color: var(--#{$prefix}bg-color-light);
+
+  .menu-ch {
+    height: 55px;
+
+    .menu-btn {
+      button {
+        height: 55px;
+        width: 136px;
+      }
+    }
+  }
+}
